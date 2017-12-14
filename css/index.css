@@ -200,9 +200,9 @@ p{
 }
 
 #keep2{
-	width:70%;
-	margin-left:17%;
-	margin-top:10%;
+	width:50%;
+	margin-left:25%;
+	margin-top:5%;
 	
 }
 
@@ -214,10 +214,10 @@ p{
 	color: #ffffff;
 	position: relative;
 	padding:2%;
-	animation:htmlanimatie 5s 5;
-	-moz-animation:htmlanimatie 5s 5;
-	-webkit-animation:htmlanimatie 5s 5;
-	-o-animation:htmlanimatie 5s 5;
+	animation:htmlanimatie 5s 50;
+	-moz-animation:htmlanimatie 5s 50;
+	-webkit-animation:htmlanimatie 5s 50;
+	-o-animation:htmlanimatie 5s 50;
 	
 }
 
@@ -264,6 +264,16 @@ p{
 a:link {
     background-color: transparent;
     text-decoration: none;
+}
+
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}
+.jump {
+  transform-origin: 25% 25%;
+  animation: jump .8s linear alternate infinite;
 }
 
 
